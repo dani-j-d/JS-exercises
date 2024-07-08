@@ -1,5 +1,5 @@
 
-const boardGen = function(size = 8) {
+const boardGen = function (size = 8) {
     let board = "";
     let row = 1;
 
