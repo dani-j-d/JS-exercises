@@ -5,7 +5,7 @@ const range = (start, end) => {
 
     // input sanitization
     if( typeof start !== "number" || typeof end !== "number" ) {
-        return
+        return;
     }
 
     // starting with the first parameter, add the value to an array and count up until reaching the second parameter
@@ -14,4 +14,16 @@ const range = (start, end) => {
     }
 
     return numberRange;
+}
+
+const sum = (numbers) => {
+
+    let total = 0;
+
+    // empty array and add contents to total
+    while (numbers.length > 0) {
+        total = total + numbers.pop();
+    }
+
+    return total;
 }
